@@ -50,7 +50,7 @@
   w = whatchanged
   pyc = !$(find . -name '*.pyc' | xargs rm -rf)
   graph = log --graph --oneline --decorate
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lg = log --graph  --abbrev-commit --date=short --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%Cblue@%an%Creset%Cgreen %cr) %C(black)%ad%Creset'
   info = config --list
   summary = log --oneline
   pop = !git stash apply && git stash clear
