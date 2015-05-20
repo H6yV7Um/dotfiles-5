@@ -3,7 +3,8 @@
   email = hotoo.cn@gmail.com
 [merge]
   ;tool = extMerge
-  tool = vimdiff
+	tool = vimdiff
+	conflictstyle = diff3
   ;tool = /usr/local/bin/gitdiff
 [mergetools "extMerge"]
   cmd = extMerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
@@ -70,3 +71,11 @@
 	default = simple
 ;[init]
   ;templatedir = /Users/hotoo/.git-template
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = No
+[mergetool]
+	prompt = false
+[core]
+	editor = /usr/bin/vim
