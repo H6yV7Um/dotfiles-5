@@ -1,5 +1,5 @@
 [user]
-  name = hotoo
+	name = 闲耘™
   email = hotoo.cn@gmail.com
 [merge]
   ;tool = extMerge
@@ -79,3 +79,4 @@
 	prompt = false
 [core]
 	editor = /usr/bin/vim
+	quotepath = false
