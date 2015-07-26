@@ -67,6 +67,7 @@
   # given any git object, try to show it briefly
   whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
   searchcommits = "!f() { query=\"$1\"; shift; git log -S\"$query\" \"$@\"; }; f \"$@\""
+  open = !gitopen
 [push]
 	default = simple
 ;[init]
