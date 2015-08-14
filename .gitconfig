@@ -1,16 +1,23 @@
 [user]
 	name = 闲耘™
   email = hotoo.cn@gmail.com
+[core]
+	editor = /usr/bin/vim
+	quotepath = false
 [merge]
   ;tool = extMerge
-	tool = vimdiff
+	;tool = vimdiff
 	conflictstyle = diff3
   ;tool = /usr/local/bin/gitdiff
 [mergetools "extMerge"]
   cmd = extMerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
   trustExitCode = false
+[mergetool]
+	prompt = false
 [diff]
-  ;external = /usr/local/bin/gitdiff
+	tool = vimdiff
+[difftool]
+	prompt = No
 [pager]
   diff =
 [color]
@@ -72,12 +79,7 @@
 	default = simple
 ;[init]
   ;templatedir = /Users/hotoo/.git-template
-[diff]
-	tool = vimdiff
-[difftool]
-	prompt = No
-[mergetool]
-	prompt = false
-[core]
-	editor = /usr/bin/vim
-	quotepath = false
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
