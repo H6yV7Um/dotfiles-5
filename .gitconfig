@@ -2,7 +2,9 @@
 	name = 闲耘™
   email = hotoo.cn@gmail.com
 [core]
-	editor = /usr/bin/vim
+  ; https://github.com/hotoo/wiki.hotoo.me/issues/22
+  ; origin vim on mac: /usr/bin/vim
+	editor = /usr/local/bin/vim
 	quotepath = false
 [merge]
   ;tool = extMerge
@@ -57,8 +59,9 @@
   changes = log --oneline --reverse
   w = whatchanged
   pyc = !$(find . -name '*.pyc' | xargs rm -rf)
-  graph = log --graph --oneline --decorate
+  graph = log --graph --oneline --decorate --all
   lg = log --graph  --abbrev-commit --date=short --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%Cblue@%an%Creset%Cgreen %cr) %C(black)%ad%Creset'
+  lgs = log --graph --decorate --oneline --all --abbrev-commit --date=short --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%Cblue@%an%Creset%Cgreen %cr) %C(black)%ad%Creset'
   info = config --list
   summary = log --oneline
   pop = !git stash apply && git stash clear
