@@ -1,5 +1,5 @@
 [user]
-	name = 闲耘™
+	name = hotoo
   email = hotoo.cn@gmail.com
 [core]
   ; https://github.com/hotoo/wiki.hotoo.me/issues/22
@@ -86,3 +86,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[commit]
+	gpgsign = true
