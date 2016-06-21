@@ -9,3 +9,4 @@ Thumbs.db
 .*proj
 .svn/
 *.swp
+node_modules/

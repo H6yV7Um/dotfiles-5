@@ -1,0 +1,8 @@
+{
+  "name": "hotoo-dotfile",
+  "description": "闲耘的配置文件集",
+  "private": true,
+  "dependencies": {
+    "stylelint-config-standard": "^9.0.0"
+  }
+}
