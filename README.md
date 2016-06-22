@@ -17,3 +17,7 @@ $ make install
 $ cd ~/.dotfiles
 $ make uninstall
 ```
+
+## Reference
+
+- .stylelintrc 参考 [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
