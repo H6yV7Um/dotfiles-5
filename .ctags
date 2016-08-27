@@ -59,6 +59,11 @@
 --regex-javascript=/([A-Za-z0-9._$()]+)[ \t]*[:=][ \t]*function[ \t]*\(([A-Za-z0-9_$, \t]*)\)/\1(\2)/f,function/
 --regex-javascript=/function[ \t]*([A-Za-z0-9._$]+)[ \t]*\(([A-Za-z0-9$_, \t]*)\)/\1(\2)/f,function/
 
+--langdef=json
+--langmap=json:.json
+--regex-json=/^[ ]{2}"([^"]+)"[ \t]*:[ \t]*/\1/o,object/
+--regex-json=/^[\t]"([^"]+)"[ \t]*:[ \t]*/\1/o,object/
+
 --langdef=markdown
 --langmap=markdown:.md.mkd.markdown
 --regex-markdown=/^#[ \t]+(.+)$/\1/h,header/
