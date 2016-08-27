@@ -37,6 +37,12 @@
 --regex-wiki=/^====[ \t]+(.+)[ \t]+====$/.     \1/h,header/
 --regex-wiki=/^=====[ \t]+(.+)[ \t]+=====$/.       \1/h,header/
 --regex-wiki=/^======[ \t]+(.+)[ \t]+======$/.         \1/h,header/
+--regex-wiki=/^#[ \t]+(.+)$/\1/h,header/
+--regex-wiki=/^##[ \t]+(.+)$/. \1/h,header/
+--regex-wiki=/^###[ \t]+(.+)$/.   \1/h,header/
+--regex-wiki=/^####[ \t]+(.+)$/.     \1/h,header/
+--regex-wiki=/^#####[ \t]+(.+)$/.       \1/h,header/
+--regex-wiki=/^######[ \t]+(.+)$/.         \1/h,header/
 
 --langdef=confluencewiki
 --langmap=confluencewiki:.wiki
