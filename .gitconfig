@@ -6,6 +6,7 @@
   ; origin vim on mac: /usr/bin/vim
 	editor = /usr/local/bin/vim
 	quotepath = false
+	ignorecase = false
 [merge]
   ;tool = extMerge
 	;tool = vimdiff
