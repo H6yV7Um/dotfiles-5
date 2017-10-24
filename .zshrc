@@ -83,8 +83,11 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 export NODE_PATH="/usr/local/lib/node_modules"
 
-export PATH="/usr/local/mysql/bin/:/usr/local/Cellar/git/2.9.0/bin:$PATH"
+export PATH="/usr/local/go/bin:/usr/local/mysql/bin/:/usr/local/Cellar/git/2.9.0/bin:$PATH"
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib"
+
+# 离线包网关
+export FORWARD_IP=80e65015ea2e.local.alipay.net
 
 export PROMPT="🍀 ☘ 🍃 🍂 🍁 $PROMPT"
 

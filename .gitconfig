@@ -1,12 +1,13 @@
 [user]
 	name = hotoo
-  email = hotoo.cn@gmail.com
+	email = hotoo.cn@gmail.com
 [core]
   ; https://github.com/hotoo/wiki.hotoo.me/issues/22
   ; origin vim on mac: /usr/bin/vim
 	editor = /usr/local/bin/vim
 	quotepath = false
 	ignorecase = false
+	; pager = diff-so-fancy | less --tabs=4 -RFX
 [merge]
   ;tool = extMerge
 	;tool = vimdiff
@@ -22,7 +23,7 @@
 [difftool]
 	prompt = No
 [pager]
-  diff =
+  diff = diff-so-fancy
 [color]
   diff = auto
   status = auto
@@ -79,6 +80,8 @@
   whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
   searchcommits = "!f() { query=\"$1\"; shift; git log -S\"$query\" \"$@\"; }; f \"$@\""
   open = !gitopen
+	dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy; }; f"
+	bralias = !git-branch-alias
 [push]
 	default = simple
 ;[init]
