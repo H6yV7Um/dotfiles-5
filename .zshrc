@@ -83,19 +83,21 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 export NODE_PATH="/usr/local/lib/node_modules"
 
-export PATH="/usr/local/go/bin:/usr/local/mysql/bin/:/usr/local/Cellar/git/2.9.0/bin:$PATH"
-export DYLD_LIBRARY_PATH="/usr/local/mysql/lib"
+#export PATH="/usr/local/go/bin:/usr/local/mysql/bin/:/usr/local/Cellar/git/2.9.0/bin:$PATH"
+#export DYLD_LIBRARY_PATH="/usr/local/mysql/lib"
 
 # 离线包网关
-export FORWARD_IP=80e65015ea2e.local.alipay.net
+export FORWARD_IP=88e9fe521e32.local.alipay.net
 
 export PROMPT="🍀 ☘ 🍃 🍂 🍁 $PROMPT"
 
-export NVM_DIR=$(brew --prefix)/var/nvm
+#export NVM_DIR=$(brew --prefix)/var/nvm
 
-alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+#alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 # alias git='gitplus'
 # Mac origin vim: /usr/bin/vim
-alias vim='/usr/local/bin/vim'
-alias neovim='/usr/local/Cellar/neovim/0.1.4/bin/nvim'
+# alias vim='/usr/local/bin/vim'
+#alias neovim='/usr/local/Cellar/neovim/0.1.4/bin/nvim'
 alias macvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
+alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
+alias sublime='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
