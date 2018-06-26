@@ -54,7 +54,7 @@
 --regex-confluencewiki=/^h6.[ \t]+(.+)$/　        \1/h,header/
 
 --langdef=javascript
---langmap=javascript:.js
+--langmap=javascript:.js.jsx
 --regex-javascript=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\{/\1/o,object/
 --regex-javascript=/([A-Za-z0-9._$()]+)[ \t]*[:=][ \t]*function[ \t]*\(([A-Za-z0-9_$, \t]*)\)/\1(\2)/f,function/
 --regex-javascript=/function[ \t]*([A-Za-z0-9._$]+)[ \t]*\(([A-Za-z0-9$_, \t]*)\)/\1(\2)/f,function/
